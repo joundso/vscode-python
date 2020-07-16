@@ -1,0 +1,18 @@
+  version: '3'
+
+  services:
+    # vscode:
+    #   image: test_vscode
+
+    vscode:
+      # build: .
+      image: vscode-python
+      # volumes:
+      #   - ./code:/code
+      #   - ./data:/data
+      ports:
+        - "8989:8989"
+      # environment:
+      #   - POSTGRES_DB=postgres
+      #   - POSTGRES_USER=postgres
+      #   - POSTGRES_PASSWORD=postgres
